@@ -29,7 +29,7 @@
             <div class="col-md-12">
                 <div>
                     <h1 class="page__section__title">
-                        ABOUT SIST<span class="text-lowercase">ec</span> hfjfj
+                        ABOUT SIST<span class="text-lowercase">ec</span>
                     </h1>
                 </div>
             </div>
@@ -242,7 +242,8 @@ if (count($recent_happenings) > 0) {
                     </div>
                     <div class="counter-content">
                         <div class="count-number"> <span class="count ff-semibold" counter-lim="20000">20000</span>
-                            <span class="plus-sign">+</span> </div>
+                            <span class="plus-sign">+</span>
+                        </div>
                         <div class="counter-title"> Students Network </div>
                     </div>
                 </div>
