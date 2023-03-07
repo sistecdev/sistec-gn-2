@@ -478,6 +478,11 @@
       color: $tertiaryClr;
       font-size: 18px;
       font-family: font-bold;
+      height: 45px;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     p {

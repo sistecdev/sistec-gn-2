@@ -188,7 +188,7 @@ if (count($recent_happenings) > 0) {
       <div class="row">
          <div class="col-md-12">
             <h1 class="page__section__title">
-               The SISTec Spread
+               The SGI Spread
             </h1>
             <h1 class="title font-medium"> </h1>
          </div>
@@ -260,13 +260,13 @@ if (count($recent_happenings) > 0) {
                               <div class="course-content">
                                  <div class="course-text">
                                     <ul class="web-list-style no-padding distance">
-                                       <li>Artificial Intelligence and Data Science</li>
+                                       <li>Civil Engineering</li>
                                        <li>Computer Science & Engineering</li>
-                                       <li>Cyber Security</li>
+                                       <li>CSE with Artificial Intelligence and Data Science</li>
+                                       <li>CSE with Cyber Security</li>
                                        <li>Electrical & Electronics Engineering</li>
                                        <li>Electronics & Communication Engineering</li>
                                        <li>Mechanical Engineering</li>
-                                       <li>Civil Engineering</li>
                                     </ul>
                                  </div>
                               </div>

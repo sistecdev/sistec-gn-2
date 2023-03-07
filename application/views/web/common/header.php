@@ -41,7 +41,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
    <!-- CSS -->
    <link rel="stylesheet" href="<?= base_url("assets/fontawesome/css/fontawesome.all.min.css") ?>">
    <link rel="stylesheet" href="<?= base_url("assets/web/css/bootstrap.min.css") ?>">
-   <link rel=" stylesheet" href="<?= base_url("assets/web/css/webstyle.css") ?>">
+   <link rel=" stylesheet" href="<?= base_url("assets/web/css/webstyle.min.css") ?>">
    <link rel=" stylesheet" href="<?= base_url("assets/web/css/jquery.fancybox.min.css") ?>">
 
    <!-- Slick CSS -->
