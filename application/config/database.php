@@ -79,6 +79,11 @@ $db['default'] = array(
 	'username' => 'root',
 	'password' => '',
 	'database' => 'admin_sistecgn',
+
+	// 'username' => 'u535360460_sistecgn_user',
+	// 'password' => 'Sistecgndb!@#8426',
+	// 'database' => 'u535360460_sistecgn',
+
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -94,3 +99,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
