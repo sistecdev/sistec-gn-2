@@ -1,0 +1,39 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 25px;
+
+  .map-div {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .contact-title {
+    font-family: font-bold;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-size: 24px;
+    color: $tertiaryClr;
+  }
+}
+
+.contact-social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+
+  a {
+    width: 35px;
+    height: 35px;
+    background: $secondaryClr;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+
+    i {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+<?php
+$config["departmentConferences"] = [
+   "mba" => [
+      [
+         "teacher_name" => "Prof Somen Mitra",
+         "paper_title" => "Application of Natural Language Processing Techniques to Process Consumer Complaints: With Reference to Comcast Consumer Complaints at Kaggle",
+         "conference_name" => "10th international Conference on Global Information and Business Strategies",
+         "place" => "International",
+         "publication_year" => "2019",
+      ],
+      [
+         "teacher_name" => "Prof Somen Mitra",
+         "paper_title" => "An Empirical Analysis of Global Green Indices for Hedging Climate Risk",
+         "conference_name" => "9th international Conference on Global Information and Business Strategies",
+         "place" => "International",
+         "publication_year" => "2019",
+      ],
+      [
+         "teacher_name" => "Prof Somen Mitra",
+         "paper_title" => "A Study on Investors’ take on the Life insurance Segment in India",
+         "conference_name" => "7th international Conference on Global Information and Business Strategies",
+         "place" => "International",
+         "publication_year" => "2017",
+      ],
+      [
+         "teacher_name" => "Prof Somen Mitra",
+         "paper_title" => "A Study on Consumer Perception and Awareness about Life Insurance at Gwalior Region",
+         "conference_name" => "International conference on “Innovations in Service” ",
+         "place" => "International",
+         "publication_year" => "2015",
+      ],
+      [
+         "teacher_name" => "Prof Somen Mitra",
+         "paper_title" => "A Study on the Effect of Attrition over Financial Performance of the  Companies in Life Insurance Sector in India",
+         "conference_name" => "National Conference on Emerging Challenges for Sustainable Business",
+         "place" => "National",
+         "publication_year" => "2012",
+      ],
+   ],
+   "first_year" => [
+      [
+         "teacher_name" => "Dr. Preeti Khare & Dr. V.K. Saxena",
+         "paper_title" => "4'-hydroxy-3',6-dimethoxy 6',6'-dimethyl chromeno(7,8,2',3') floavone from Citrus reticulata CV blanco",
+         "conference_name" => "81 th Session of the Indian Science Congress Association RajasthanUniversity,Jaipur",
+         "place" => "International",
+         "publication_year" => "1994",
+      ],
+      [
+         "teacher_name" => "Dr. Preeti Khare",
+         "paper_title" => "Noval potential antiviral 5-Hydroxy,3,7,8,5'-tetra methoxy 3'-4-methelenedioxy flavone from the fruits of Citrus reticulata Blanco",
+         "conference_name" => "National seminar on Recent trend in applied,physical &chemical sciences",
+         "place" => "National",
+         "publication_year" => "2014",
+      ],
+      [
+         "teacher_name" => "Dr. Preeti Khare",
+         "paper_title" => "3-methoxy flavones from Citrus limettides Tanaka",
+         "conference_name" => "National conference on Advansment in science &Technology for sustainable future",
+         "place" => "National",
+         "publication_year" => "2015",
+      ],
+      [
+         "teacher_name" => "Dr. Preeti Khare",
+         "paper_title" => "Separation and structure elucidation of flavone glycoside frm seeds of Trichosathes anguina",
+         "conference_name" => "National conference on Recent trends in applied and Technology",
+         "place" => "National",
+         "publication_year" => "2016",
+      ],
+      [
+         "teacher_name" => "Dr. Preeti Khare",
+         "paper_title" => "A phytochemical examination of flavone from Citrus limettiodes Tanaka",
+         "conference_name" => "Multidisciplinary International Conference on Unmask the future ,opportunities &challenges",
+         "place" => "International",
+         "publication_year" => "2016",
+      ],
+      [
+         "teacher_name" => "Kamal Wadhwa & Farhan Beg",
+         "paper_title" => "Common Fixed Point Theorem for Occasionally Weakly Compatible Mapping in Q-Fuzzy Metric Spaces",
+         "conference_name" => "National Conference (NCAA)Held in Ujjain in 2012",
+         "place" => "National",
+         "publication_year" => "2011",
+      ],
+      [
+         "teacher_name" => "Kamal Wadhwa & Farhan Beg",
+         "paper_title" => "Common Fixed Point Theorems With Continously Subcompatible Mappings In Fuzzy Metric Spaces",
+         "conference_name" => "International Conference on Recent Trends in Applied Sciences with Engineering Applications Held in Truba College Bhopal",
+         "place" => "International",
+         "publication_year" => "2013",
+      ],
+   ],
+];

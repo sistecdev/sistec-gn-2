@@ -1,0 +1,358 @@
+.nav-tabs-title {
+  font-family: font-bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: $tertiaryClr;
+}
+
+.departments-nav {
+  gap: 20px;
+  $tabWidth: 210px;
+  $tabClr: rgba(
+    $color: $secondaryClr,
+    $alpha: 0.9,
+  );
+  $tabBoxShadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  .nav-link {
+    color: $blackClr;
+    font-family: font-medium;
+
+    &.active {
+      color: $tertiaryClr;
+    }
+  }
+
+  #v-pills-tab {
+    width: 20%;
+    .nav-link {
+      background: #fff;
+      color: $blackClr;
+      position: relative;
+      box-shadow: $tabBoxShadow;
+      border-radius: 5px;
+      font-size: 14px;
+      min-height: 55px;
+      font-family: font-medium;
+      & + .nav-link {
+        margin-top: 15px;
+      }
+      &.active {
+        background: $gradientClr;
+        color: #fff;
+      }
+      &.active::before {
+        content: "";
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid $tabClr;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  #v-pills-tabContent {
+    width: 80%;
+    box-shadow: $tabBoxShadow;
+    border-radius: 5px;
+    padding: 15px 20px;
+
+    .tab-pane {
+      .facilities-text-swiper-slider {
+        .facility-title {
+          font-size: 24px;
+        }
+      }
+      .title {
+        @extend .nav-tabs-title;
+      }
+      .dept-content {
+        p {
+          text-align: justify;
+          margin-bottom: 10px;
+        }
+        ul {
+          padding-left: 15px;
+          li {
+            text-align: justify;
+            list-style: circle;
+            & + li {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      .table {
+        tr {
+          th:first-child {
+            width: 80px;
+            vertical-align: middle;
+          }
+          td,
+          th {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+.faculty-cards-flex {
+  $theGap: 15px;
+  gap: $theGap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & > .faculty-card {
+    width: calc(33.3% - (#{$theGap}));
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px,
+      rgba(0, 0, 0, 0.07) 0px 2px 2px 0px, rgba(0, 0, 0, 0.07) 0px 4px 4px 0px,
+      rgba(0, 0, 0, 0.07) 0px 8px 8px 0px, rgba(0, 0, 0, 0.07) 0px 16px 16px 0px;
+    img {
+      width: 100%;
+    }
+    .faculty-card-content {
+      position: relative;
+      padding: 15px 15px 20px;
+      background-color: #fff;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        top: -10px;
+        left: 0px;
+        right: 0px;
+        background-color: #fff;
+        z-index: 0;
+        transform: skewY(3deg);
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 15px;
+
+        &.name {
+          font-family: font-bold;
+        }
+      }
+    }
+  }
+}
+
+.laboratory-cards-flex {
+  $rowGap: 25px;
+  $colGap: 15px;
+  gap: $rowGap $colGap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & > .laboratory-card {
+    padding: 0 18px;
+    text-align: center;
+    font-family: font-medium;
+    line-height: 1.2;
+    width: calc(25% - calc(#{$colGap}));
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    font-size: 15px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.departmental-laboratories-flex {
+  background: #f7f7f7;
+  border: 0.5px solid #dbdbdb;
+  > li {
+    border: 0.5px solid #dbdbdb;
+    padding: 8px 12px;
+    font-family: font-medium;
+    font-size: 15px;
+    text-align: center;
+    &.active {
+      a {
+        color: $tertiaryClr;
+      }
+    }
+    &.departmental-laboratories-title {
+      font-size: 18px;
+      font-family: font-bold;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      background: $gradientClr;
+      padding: 12px;
+    }
+  }
+}
+
+.laboratory-page-content {
+  .title {
+    font-family: font-medium;
+    font-size: 32px;
+    color: $secondaryClr;
+  }
+}
+
+#department-workshop-swiper {
+  margin-bottom: 25px;
+  .swiper {
+    width: 100%;
+    padding-top: 25px;
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 375px;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $secondaryClr;
+  }
+}
+
+.workshop-flex {
+  $rowGap: 30px;
+  $colGap: 12px;
+  gap: $rowGap $colGap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > .workshop-card {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: calc(33.3% - #{$colGap});
+    img {
+      width: 100%;
+    }
+    .content {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.newsletter-cards-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  .newsletter-card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: $tertiaryClr;
+    font-size: 22px;
+    font-family: font-semibold;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.publications-person-title {
+  font-size: 18px;
+  font-family: font-semibold;
+  color: $blackClr;
+  background: #f3f3f3;
+  padding: 10px;
+}
+
+.publications-ul {
+  list-style: circle;
+  padding-left: 15px;
+
+  li {
+    padding: 8px 0;
+    border-top: 1px solid #ccc;
+
+    &:first-child {
+      border-top: unset;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.projects-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+
+  .projects-card {
+    text-align: center;
+    .project-card-title {
+      height: 50px;
+      font-size: 15px;
+      font-family: font-semibold;
+      color: #002233;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.industrial-visit-card {
+  .industrial-visit-header {
+    background: #f3f3f3;
+    padding: 10px 15px;
+    .iv-title {
+      font-size: 20px;
+      font-family: font-bold;
+      color: #002233;
+      margin-bottom: 2px;
+    }
+    .iv-date {
+      color: $secondaryClr;
+      font-size: 15px;
+      margin-bottom: 0;
+      font-family: font-semibold;
+    }
+  }
+
+  .industrial-visit-images-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    img {
+      width: 100%;
+    }
+  }
+}
