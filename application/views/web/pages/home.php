@@ -29,7 +29,7 @@
          <div class="col-md-12">
             <div>
                <h1 class="page__section__title">
-                  ABOUT SIST<span class="text-lowercase">ec</span> Workflow 2
+                  ABOUT SIST<span class="text-lowercase">ec</span>
                </h1>
             </div>
          </div>

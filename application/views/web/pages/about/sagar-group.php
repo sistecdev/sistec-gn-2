@@ -5,15 +5,15 @@
             <div class="col-md-12">
                <div class="ventures-grid">
                   <div class="venture-link">
-                     <a href="#vh-realestate">
-                        <img src="<?= base_url("assets/web/images/icons/real-estate.png") ?>">
-                        <span>Real Estate</span>
-                     </a>
-                  </div>
-                  <div class="venture-link">
                      <a href="#vh-education">
                         <img src="<?= base_url("assets/web/images/icons/education.png") ?>">
                         <span>Education</span>
+                     </a>
+                  </div>
+                  <div class="venture-link">
+                     <a href="#vh-realestate">
+                        <img src="<?= base_url("assets/web/images/icons/real-estate.png") ?>">
+                        <span>Real Estate</span>
                      </a>
                   </div>
                   <div class="venture-link">
@@ -37,45 +37,6 @@
 
 <section id="venture-heritage">
    <div class="content-images">
-      <div id="vh-realestate">
-         <div class="img-card" style="background: url('<?= base_url("assets/web/images/history/bg/AB-V2.jpg") ?>');">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="vh-image">
-                        <a href="https://www.agrawalbuilders.com/" target="_blank">
-                           <img src="<?= base_url("assets/web/images/history/logos/AB-V1.png") ?>" alt="">
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="row gx-4">
-                  <div class="col-md-5">
-                     <div class="the-image">
-                        <img src="<?= base_url("assets/web/images/history/thumbnail/AB.jpg") ?>">
-                     </div>
-                  </div>
-                  <div class="col-md-7">
-                     <div class="vh-content">
-                        <h2 class="vh-title">Agrawal Builders</h2>
-                        <h2 class="vh-date">1983</h2>
-                        <p>
-                           The firm foundation of trust laid 39 years ago in realising your dream home has turn
-                           into
-                           reality with Agrawal Builders as one stop solution for housing needs. It is the real
-                           estate and infrastructure development wing of Sagar Group and has established itself
-                           as
-                           the most preferred brand in Central India.
-                        </p>
-                        <a href="https://www.agrawalbuilders.com/" class="vh-button" target="_blank">
-                           Read More
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
       <div id="vh-education">
          <div class="img-card" style="background: url('<?= base_url("assets/web/images/history/bg/SPS-V2.jpg") ?>');">
             <div class="container">
@@ -290,6 +251,45 @@
                               </a>
                            </div>
                         </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="vh-realestate">
+         <div class="img-card" style="background: url('<?= base_url("assets/web/images/history/bg/AB-V2.jpg") ?>');">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="vh-image">
+                        <a href="https://www.agrawalbuilders.com/" target="_blank">
+                           <img src="<?= base_url("assets/web/images/history/logos/AB-V1.png") ?>" alt="">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row gx-4">
+                  <div class="col-md-5">
+                     <div class="the-image">
+                        <img src="<?= base_url("assets/web/images/history/thumbnail/AB.jpg") ?>">
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="vh-content">
+                        <h2 class="vh-title">Agrawal Builders</h2>
+                        <h2 class="vh-date">1983</h2>
+                        <p>
+                           The firm foundation of trust laid 39 years ago in realising your dream home has turn
+                           into
+                           reality with Agrawal Builders as one stop solution for housing needs. It is the real
+                           estate and infrastructure development wing of Sagar Group and has established itself
+                           as
+                           the most preferred brand in Central India.
+                        </p>
+                        <a href="https://www.agrawalbuilders.com/" class="vh-button" target="_blank">
+                           Read More
+                        </a>
                      </div>
                   </div>
                </div>

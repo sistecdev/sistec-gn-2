@@ -113,9 +113,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <li class="<?= active_second_nav() == "sagar-group" ? "active" : ""; ?>">
                                        <a href="<?= base_url("sagar-group") ?>">Sagar Group</a>
                                     </li>
-                                    <li class="<?= active_second_nav() == "sagar-group-of-institutions" ? "active" : ""; ?>">
+                                    <!-- <li class="<?= active_second_nav() == "sagar-group-of-institutions" ? "active" : ""; ?>">
                                        <a href="<?= base_url("sagar-group-of-institutions") ?>">Sagar Group of Institutions</a>
-                                    </li>
+                                    </li> -->
                                     <li class="<?= active_second_nav() == "vision-mission" ? "active" : ""; ?>">
                                        <a href="<?= base_url("vision-mission") ?>">Vision & Mission</a>
                                     </li>

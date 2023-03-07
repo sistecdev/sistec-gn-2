@@ -154,6 +154,7 @@
 
 .flip-box-item {
   position: relative;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   width: 300px;
   max-width: 100%;
@@ -383,6 +384,119 @@
       border: 1px solid #fff;
       margin-top: 30px;
       transition: all 0.5s ease;
+    }
+  }
+}
+
+#our-leaders {
+  .higher-management {
+    .the-quote {
+      font-size: 18px;
+      line-height: 1.3;
+      text-align: justify;
+    }
+
+    .left-pad {
+      padding-left: 15px;
+    }
+
+    .right-pad {
+      padding-right: 15px;
+    }
+
+    .hm-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 30px;
+
+      & > img {
+        box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px,
+          rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px,
+          rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
+      }
+
+      .name > p {
+        color: $blackClr;
+        line-height: 1.2;
+
+        &:first-child {
+          margin-top: 12px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+#lower-management {
+  .principals-div {
+    margin-top: 30px;
+  }
+}
+
+.team-card {
+  width: 325px;
+  height: 325px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 30px rgb(0 0 0 / 40%);
+
+    .team-card-footer {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .imgBx {
+      transform: scale(1.1);
+    }
+  }
+
+  .imgBx {
+    transition: 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center;
+    }
+  }
+
+  .team-card-footer {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    text-align: center;
+    padding: 15px 5px;
+
+    h3 {
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 16px;
     }
   }
 }
