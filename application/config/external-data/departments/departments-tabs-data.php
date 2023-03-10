@@ -61,5 +61,18 @@ $config["departmentTabs"] = [
       "scope" => "Scope and Opportunities",
       "eligibility" => "Eligibility",
       "faq" => "Frequently Asked Questions",
-   ]
+   ],
+   
+   "civil" => [
+      "about" => "About",
+      "programs" => "Programs",
+      "faculty" => "Faculty",
+      "student-achievements" => "Student Achievements",
+      "laboratories" => "Laboratories",
+      "vac" => "Value Added Courses",
+      "sttp" => "STTPs / FDPs / Workshops",
+      "projects" => "Projects",
+      "publications" => "Publications",
+      "visits" => "Industrial Visits",
+   ],
 ];
