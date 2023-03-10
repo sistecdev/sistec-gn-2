@@ -5,10 +5,10 @@ class RemainingController extends CI_Controller
 {
    public function research_development()
    {
-      active_nav("r&d", "0");
+      active_nav("research-development", "research-development");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Research & Development",
          "breadcrumb" => ["campus life", "Research & Development"]
       ];
@@ -24,7 +24,7 @@ class RemainingController extends CI_Controller
       active_nav("accreditations", "naac-mandatory-disclosure");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Naac Mandatory Disclosure",
          "breadcrumb" => ["campus life", "Naac Mandatory Disclosure"]
       ];
@@ -40,7 +40,7 @@ class RemainingController extends CI_Controller
       active_nav("accreditations", "nba-program-applied");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "NBA Program Applied",
          "breadcrumb" => ["campus life", "NBA Program Applied"]
       ];
@@ -56,7 +56,7 @@ class RemainingController extends CI_Controller
       active_nav("placements", "placements");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "placements",
          "breadcrumb" => ["campus life", "placements"]
       ];
@@ -73,13 +73,13 @@ class RemainingController extends CI_Controller
       active_nav("admissions", "admission-enquiry");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "admission enquiry",
          "breadcrumb" => ["campus life", "admission enquiry"]
       ];
 
-      $data["courses"] = $this->mod->select("courses", "*", ["active"=>1, "status"=>1], "course_id", "ASC")->result();
-      $data["states"] = $this->mod->select("states", "*", ["country_id"=>101], "name", "ASC")->result();
+      $data["courses"] = $this->mod->select("courses", "*", ["active" => 1, "status" => 1], "course_id", "ASC")->result();
+      $data["states"] = $this->mod->select("states", "*", ["country_id" => 101], "name", "ASC")->result();
       $this->load->view('web/common/breadcrumb', $pageData);
       $this->load->view('web/pages/remaining/admission-enquiry', $data);
       $this->load->view('web/pages-scripts/common-script');
@@ -92,7 +92,7 @@ class RemainingController extends CI_Controller
       active_nav("admissions", "admission-procedure");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "admission procedure",
          "breadcrumb" => ["campus life", "admission procedure"]
       ];
@@ -108,7 +108,7 @@ class RemainingController extends CI_Controller
       active_nav("contact", "contact");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "contact",
          "breadcrumb" => ["campus life", "contact"]
       ];
@@ -124,7 +124,7 @@ class RemainingController extends CI_Controller
       active_nav("strip-upper", "newsletters-bulletins");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "newsletters bulletins",
          "breadcrumb" => ["campus life", "newsletters bulletins"]
       ];
@@ -141,7 +141,7 @@ class RemainingController extends CI_Controller
       active_nav("strip-upper", "approvals");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "approvals",
          "breadcrumb" => ["campus life", "approvals"]
       ];
@@ -160,7 +160,7 @@ class RemainingController extends CI_Controller
       active_nav("strip-upper", "careers");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "careers",
          "breadcrumb" => ["campus life", "careers"]
       ];

@@ -17,11 +17,11 @@ $halfSecTransition: all 0.5s ease-in-out;
 
 $navigationMenuFontSize: 14px;
 
-$gradientClr: linear-gradient(
-  0deg,
-  rgba(114, 59, 205, 1) 10%,
-  rgba(92, 113, 222, 1) 100%
-);
+$mob-page-content-top-spacing: 70px;
+
+$gradientClr: linear-gradient(0deg,
+    rgba(114, 59, 205, 1) 10%,
+    rgba(92, 113, 222, 1) 100%);
 
 $gradientClr2: linear-gradient(135deg, #e95035 0, #e5136c 100%);
 
@@ -194,10 +194,11 @@ a {
 }
 
 $verticalSpacing: 0.25rem;
+
 @for $i from 1 through 20 {
   .space-y {
     &-#{$i} {
-      > * + * {
+      >*+* {
         margin-top: calc(#{$verticalSpacing} * #{$i});
       }
     }
@@ -247,9 +248,11 @@ $verticalSpacing: 0.25rem;
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(20px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -259,27 +262,35 @@ $verticalSpacing: 0.25rem;
   &-5 {
     row-gap: 5px;
   }
+
   &-10 {
     row-gap: 10px;
   }
+
   &-15 {
     row-gap: 15px;
   }
+
   &-20 {
     row-gap: 20px;
   }
+
   &-25 {
     row-gap: 25px;
   }
+
   &-30 {
     row-gap: 30px;
   }
+
   &-35 {
     row-gap: 35px;
   }
+
   &-40 {
     row-gap: 40px;
   }
+
   &-45 {
     row-gap: 45px;
   }
@@ -317,16 +328,14 @@ $verticalSpacing: 0.25rem;
 .scrollbar-style-1::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: $primaryClr;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.2) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.2) 75%,
-    transparent 75%,
-    transparent
-  );
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent);
 }
 
 .web-list-style {
@@ -371,7 +380,7 @@ $verticalSpacing: 0.25rem;
   }
 
   &.distance {
-    li + li {
+    li+li {
       margin-top: 8px;
     }
   }
@@ -430,8 +439,7 @@ $verticalSpacing: 0.25rem;
     li::before {
       content: "";
       background-image: url("../images/icons-png/skill.png");
-      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg)
-        brightness(92%) contrast(89%);
+      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg) brightness(92%) contrast(89%);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -441,8 +449,7 @@ $verticalSpacing: 0.25rem;
     li::before {
       content: "";
       background-image: url("../images/icons-png/csr.png");
-      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg)
-        brightness(92%) contrast(89%);
+      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg) brightness(92%) contrast(89%);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -452,8 +459,7 @@ $verticalSpacing: 0.25rem;
     li::before {
       content: "";
       background-image: url("../images/icons-png/mech-faci.png");
-      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg)
-        brightness(92%) contrast(89%);
+      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg) brightness(92%) contrast(89%);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -463,8 +469,7 @@ $verticalSpacing: 0.25rem;
     li::before {
       content: "";
       background-image: url("../images/icons-svg/bullseye-svgrepo-com.svg");
-      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg)
-        brightness(92%) contrast(89%);
+      filter: invert(55%) sepia(37%) saturate(7439%) hue-rotate(214deg) brightness(92%) contrast(89%);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -544,11 +549,9 @@ $verticalSpacing: 0.25rem;
   }
 
   span {
-    background: linear-gradient(
-      0deg,
-      rgba(114, 59, 205, 1) 10%,
-      rgba(92, 113, 222, 1) 100%
-    );
+    background: linear-gradient(0deg,
+        rgba(114, 59, 205, 1) 10%,
+        rgba(92, 113, 222, 1) 100%);
     display: block;
     position: absolute;
     width: 130px;
@@ -618,6 +621,7 @@ $verticalSpacing: 0.25rem;
   transition: all 0.2s ease;
   font-size: 13px;
   font-family: font-medium;
+
   &:hover,
   &:active,
   &:focus {
@@ -631,6 +635,7 @@ $verticalSpacing: 0.25rem;
 
 .web__btn__three {
   transform: rotateX(15deg);
+
   .btn-8f:after {
     width: 100%;
     height: 40%;
@@ -683,15 +688,13 @@ $verticalSpacing: 0.25rem;
 
   &:before {
     content: "";
-    background: linear-gradient(
-      45deg,
-      #ff0000,
-      #ff7300,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000
-    );
+    background: linear-gradient(45deg,
+        #ff0000,
+        #ff7300,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -719,9 +722,11 @@ $verticalSpacing: 0.25rem;
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -745,6 +750,7 @@ $verticalSpacing: 0.25rem;
   &.dark-bg-white-icon {
     a {
       background: $blackClr;
+
       i {
         color: #fff;
       }
@@ -753,6 +759,7 @@ $verticalSpacing: 0.25rem;
 
   &.small-icon {
     margin-top: 10px;
+
     a {
       width: 35px;
       height: 35px;
@@ -847,10 +854,12 @@ $verticalSpacing: 0.25rem;
   padding: 30px 0;
   background: $gradientClr2;
   margin-top: calc(#{$stripLowerHeight} + #{$navigationHeight});
+
   p {
     margin-bottom: 0;
     line-height: 1;
   }
+
   .title {
     text-transform: uppercase;
     font-size: 38px;
@@ -859,12 +868,14 @@ $verticalSpacing: 0.25rem;
     color: #fff;
     margin-bottom: 0;
   }
+
   .page__breadcrumb {
     display: flex;
     align-items: center;
     gap: 5px;
     padding-top: 2px;
     text-transform: capitalize;
+
     .pb__item {
       // background-color: white;
       // transform: skew(-15deg);
@@ -881,13 +892,15 @@ $verticalSpacing: 0.25rem;
       font-size: 15px;
       color: #fff;
 
-      > a {
+      >a {
         color: #fff;
+
         &:hover {
           color: $tertiaryClr;
         }
       }
     }
+
     .pb__slash {
       color: #fff;
       font-size: 18px;

@@ -1,25 +1,17 @@
 <section class="split-slideshow">
     <div class="slideshow">
         <div class="slider">
-            <?php
-         foreach ($slider as $s) {
-         ?>
+            <?php foreach ($slider as $s) { ?>
             <div class="item">
                 <img src="<?= base_url($s->image); ?>" alt="<?= $s->title; ?>" title="<?= $s->title; ?>" />
             </div>
-            <?php
-         }
-         ?>
+            <?php } ?>
         </div>
     </div>
     <div class="slideshow-text">
-        <?php
-      foreach ($slider as $s) {
-      ?>
-        <div class="item"><?= $s->title; ?></div>
-        <?php
-      }
-      ?>
+        <?php foreach ($slider as $s) { ?>
+            <div class="item"><?= $s->title; ?></div>
+        <?php } ?>
     </div>
 </section>
 
@@ -35,29 +27,27 @@
             </div>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex h-100 align-items-center">
-                        <p class="text-justify mb-0">
-                            Sagar Institute of Science and Technology (SISTec®), established in the year 2007, is one of
-                            the best engineering colleges, located in the heart of the state, the city of lakes -
-                            Bhopal. SISTec is the brand name for technical colleges under the umbrella of the Sagar
-                            Group of Institutions®. Boasting state-of-the-art facilities, a diverse student body, and a
-                            talented pool of faculty, SISTec has established itself as a leader in providing quality
-                            education offering B.Tech., MBA, and M.Tech. programs. The academic programs are designed to
-                            meet the needs and interests of students from all backgrounds, making SISTec the perfect
-                            place to jumpstart your future. The brand has a strong motivation towards innovation in
-                            curriculum implementation. It further aspires to be a part of the education revolution in
-                            Technical education, impacting futuristic technologies in the Indian framework. In this
-                            process, it aims to be one of the finest providers of technical education in India.
-                        </p>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex h-100 align-items-center">
+                    <p class="text-justify mb-0">
+                        Sagar Institute of Science and Technology (SISTec®), established in the year 2007, is one of
+                        the best engineering colleges, located in the heart of the state, the city of lakes -
+                        Bhopal. SISTec is the brand name for technical colleges under the umbrella of the Sagar
+                        Group of Institutions®. Boasting state-of-the-art facilities, a diverse student body, and a
+                        talented pool of faculty, SISTec has established itself as a leader in providing quality
+                        education offering B.Tech., MBA, and M.Tech. programs. The academic programs are designed to
+                        meet the needs and interests of students from all backgrounds, making SISTec the perfect
+                        place to jumpstart your future. The brand has a strong motivation towards innovation in
+                        curriculum implementation. It further aspires to be a part of the education revolution in
+                        Technical education, impacting futuristic technologies in the Indian framework. In this
+                        process, it aims to be one of the finest providers of technical education in India.
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="about-bg-image"></div>
-                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-bg-image"></div>
             </div>
         </div>
     </div>
@@ -89,9 +79,10 @@
                         <div>
                             <ul class="list-ul space-y-4 scrollbar-style-1">
                                 <?php
-                        foreach ($news_notice as $n) if ($n->type == "Latest News") {
-                           $elseUrl = $n->details_type == "link" ? $n->external_link : base_url($n->pdf_file);
-                        ?>
+                                foreach ($news_notice as $n)
+                                    if ($n->type == "Latest News") {
+                                        $elseUrl = $n->details_type == "link" ? $n->external_link : base_url($n->pdf_file);
+                                        ?>
                                 <li>
                                     <a href="<?= $n->details_type == "text" ? "#!" : $elseUrl; ?>"
                                         class="<?= $n->details_type == "text" ? "popup-text" : ""; ?>"
@@ -103,9 +94,9 @@
                                         <p class="title line-clamp line-clamp-3"><?= $n->title; ?></p>
                                     </a>
                                 </li>
-                                <?php
-                        }
-                        ?>
+                                                                        <?php
+                                    }
+                                ?>
                             </ul>
                         </div>
                     </div>
@@ -121,9 +112,10 @@
                         <div class="mt-3">
                             <ul class="list-ul space-y-4 scrollbar-style-1">
                                 <?php
-                        foreach ($news_notice as $n) if ($n->type == "Notices") {
-                           $elseUrl = $n->details_type == "link" ? $n->external_link : base_url($n->pdf_file);
-                        ?>
+                                foreach ($news_notice as $n)
+                                    if ($n->type == "Notices") {
+                                        $elseUrl = $n->details_type == "link" ? $n->external_link : base_url($n->pdf_file);
+                                        ?>
                                 <li>
                                     <a href="<?= $n->details_type == "text" ? "#!" : $elseUrl; ?>"
                                         class="<?= $n->details_type == "text" ? "popup-text" : ""; ?>"
@@ -135,9 +127,9 @@
                                         <p class="title line-clamp line-clamp-3"><?= $n->title; ?></p>
                                     </a>
                                 </li>
-                                <?php
-                        }
-                        ?>
+                                                                        <?php
+                                    }
+                                ?>
                             </ul>
                         </div>
                     </div>
@@ -149,7 +141,7 @@
 
 <?php
 if (count($recent_happenings) > 0) {
-?>
+    ?>
 <section id="recent-happenings" class="page__section bg__2">
     <div class="container">
         <div class="row">
@@ -166,34 +158,34 @@ if (count($recent_happenings) > 0) {
         <div class="row">
             <div class="col-md-12">
                 <section class="hexagon-gallery overflow-hidden">
-                    <?php $i = 1;
-                  foreach ($recent_happenings as $h) { ?>
+                                        <?php $i = 1;
+                                        foreach ($recent_happenings as $h) { ?>
                     <div class="hex-wrap <?php if ($i <= 3) {
-                                             echo "animate-hex-top-bottom";
-                                          } ?> <?php if ($i == 4) {
-                                                   echo "animate-hex-left-right";
-                                                } ?> <?php if ($i >= 8 && $i <= 10) {
-                                                         echo "animate-hex-bottom-top";
-                                                      } ?> <?php if ($i == 7) {
-                                                               echo "animate-hex-right-left";
-                                                            } ?>">
+                        echo "animate-hex-top-bottom";
+                    } ?>                                         <?php if ($i == 4) {
+                                                                  echo "animate-hex-left-right";
+                                                              } ?>                                         <?php if ($i >= 8 && $i <= 10) {
+                                                                                                            echo "animate-hex-bottom-top";
+                                                                                                        } ?>                                         <?php if ($i == 7) {
+                                                                                                                                                      echo "animate-hex-right-left";
+                                                                                                                                                  } ?>">
                         <div class="hex">
                             <img src="<?= base_url($h->image1); ?>" class="block object-cover w-full">
                             <div class="animate-me">
                                 <p class="this-text text-center text-lg font-Nunito-Regular leading-[1.2]">
-                                    <?= $h->title; ?>
+                                                                            <?= $h->title; ?>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <?php $i++;
-                  } ?>
+                                                            <?php $i++;
+                                        } ?>
                 </section>
             </div>
         </div>
     </div>
 </section>
-<?php
+                    <?php
 }
 ?>
 
@@ -410,7 +402,7 @@ if (count($recent_happenings) > 0) {
 
 <?php
 if (count($meritorious_student) > 0) {
-?>
+    ?>
 <section id="our-meritorious-students" class="page__section bg__whitish">
     <div class="container">
         <div class="row">
@@ -423,7 +415,7 @@ if (count($meritorious_student) > 0) {
     </div>
     <div class="container">
         <div class="row">
-            <?php foreach ($meritorious_student as $m) { ?>
+                                <?php foreach ($meritorious_student as $m) { ?>
             <div class="col-md-3">
                 <div class="meritorious-card">
                     <div class="img-container">
@@ -437,12 +429,12 @@ if (count($meritorious_student) > 0) {
                             (<?= $m->subject; ?> - <?= $m->sem; ?>)
                         </p>
                         <p>
-                            <?= $m->marks; ?>
+                                                                    <?= $m->marks; ?>
                         </p>
                     </div>
                 </div>
             </div>
-            <?php } ?>
+                                <?php } ?>
         </div>
         <div class="container">
             <div class="row">
@@ -456,11 +448,11 @@ if (count($meritorious_student) > 0) {
             </div>
         </div>
 </section>
-<?php
+                    <?php
 }
 
 if (count($placements) > 0) {
-?>
+    ?>
 <section id="our-placements" class="page__section bg__4">
     <div class="container">
         <div class="row">
@@ -473,7 +465,7 @@ if (count($placements) > 0) {
     </div>
     <div class="container">
         <div class="row">
-            <?php foreach ($placements as $p) { ?>
+                                <?php foreach ($placements as $p) { ?>
             <div class="col-md-4">
                 <div class="placement-card-wrapper">
                     <div class="placement-card">
@@ -491,7 +483,7 @@ if (count($placements) > 0) {
                     </div>
                 </div>
             </div>
-            <?php } ?>
+                                <?php } ?>
         </div>
     </div>
     <div class="container">
@@ -506,7 +498,7 @@ if (count($placements) > 0) {
         </div>
     </div>
 </section>
-<?php
+                    <?php
 }
 ?>
 
@@ -533,7 +525,7 @@ if (count($placements) > 0) {
                                     <?php for ($i = 0; $i < count($homeFacilities); $i++) { ?>
                                     <div class="swiper-slide">
                                         <p class="the-title">
-                                            <?= $homeFacilities[$i]["name"]; ?>
+                                                                <?= $homeFacilities[$i]["name"]; ?>
                                         </p>
                                     </div>
                                     <?php } ?>

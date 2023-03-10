@@ -1,5 +1,6 @@
 <?php
-if (!defined('BASEPATH')) exit('No direct script access allowed');
+if (!defined('BASEPATH'))
+   exit('No direct script access allowed');
 
 if (!function_exists('active_nav')) {
    function active_nav($nav = "", $secondNav = "")
@@ -49,9 +50,9 @@ if (!function_exists('generateSeoURL')) {
       }
       $quoteSeparator = preg_quote($separator, '#');
       $trans = array(
-         '&.+?;'                    => '',
-         '[^\w\d _-]'            => '',
-         '\s+'                    => $separator,
+         '&.+?;' => '',
+         '[^\w\d _-]' => '',
+         '\s+' => $separator,
          '(' . $quoteSeparator . ')+' => $separator
       );
       $string = strip_tags($string);
