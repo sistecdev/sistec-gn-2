@@ -126,10 +126,6 @@
   letter-spacing: 20px;
   line-height: 1;
   font-family: font-extrabold;
-
-  @media (max-width: 767px) {
-    font-size: 40px;
-  }
 }
 
 .the-most {
@@ -204,8 +200,8 @@
     margin: 15px 0 15px;
     padding-right: 12px;
 
-    > li {
-      > a {
+    >li {
+      >a {
         display: flex;
         gap: 0.75rem;
         align-items: center;
@@ -214,6 +210,7 @@
           .title {
             color: $primaryClr;
           }
+
           .date {
             p {
               color: $blackClr;
@@ -250,6 +247,7 @@
 #courses {
   .courses-card {
     position: relative;
+
     .big-title {
       font-size: 50px;
     }
@@ -507,9 +505,11 @@
     position: absolute;
     top: 60%;
     transform: translate(0, -50%);
+
     &.prev-btn {
       left: 0;
     }
+
     &.next-btn {
       right: 0;
     }
@@ -518,6 +518,7 @@
 
 .swiper-sync-card-text-slider {
   pointer-events: none;
+
   .the-title {
     text-align: center;
     font-size: 30px;
@@ -530,9 +531,11 @@
   pointer-events: none;
   position: relative;
   width: 100%;
+
   .swiper {
     width: 80%;
     height: 350px;
+
     .swiper-slide {
       display: flex;
       align-items: center;
@@ -575,38 +578,47 @@
       grid-row-start: 1;
       grid-column: 2 / span 2;
     }
+
     &:nth-child(2) {
       grid-row-start: 1;
       grid-column: 4 / span 2;
     }
+
     &:nth-child(3) {
       grid-row-start: 1;
       grid-column: 6 / span 2;
     }
+
     &:nth-child(4) {
       grid-row-start: 2;
       grid-column: 1 / span 2;
     }
+
     &:nth-child(5) {
       grid-row-start: 2;
       grid-column: 3 / span 2;
     }
+
     &:nth-child(6) {
       grid-row-start: 2;
       grid-column: 5 / span 2;
     }
+
     &:nth-child(7) {
       grid-row-start: 2;
       grid-column: 7 / span 2;
     }
+
     &:nth-child(8) {
       grid-row-start: 3;
       grid-column: 2 / span 2;
     }
+
     &:nth-child(9) {
       grid-row-start: 3;
       grid-column: 4 / span 2;
     }
+
     &:nth-child(10) {
       grid-row-start: 3;
       grid-column: 6 / span 2;
@@ -619,6 +631,7 @@
       height: 265px;
       background-color: #424242;
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
       .animate-me {
         position: absolute;
         background-color: rgba($color: $primaryClr, $alpha: 0);
@@ -663,10 +676,12 @@
 }
 
 @keyframes animate-hex-left-right {
+
   0%,
   100% {
     transform: translate(0, 0);
   }
+
   50% {
     transform: translate(-5px, 0);
   }
@@ -680,10 +695,12 @@
 }
 
 @keyframes animate-hex-right-left {
+
   0%,
   100% {
     transform: translate(0, 0);
   }
+
   50% {
     transform: translate(5px, 0);
   }
@@ -697,10 +714,12 @@
 }
 
 @keyframes animate-hex-top-bottom {
+
   0%,
   100% {
     transform: translate(0, 0);
   }
+
   50% {
     transform: translate(0, -5px);
   }
@@ -714,10 +733,12 @@
 }
 
 @keyframes animate-hex-bottom-top {
+
   0%,
   100% {
     transform: translate(0, 0);
   }
+
   50% {
     transform: translate(0, 5px);
   }

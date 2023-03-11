@@ -49,7 +49,7 @@
                             <nav>
                                 <ul id="nav-ul">
                                     <?php foreach ($this->config->item("webMobNavLinks")["singleNav"]["home"] as $link) { ?>
-                                        <li class="<?= active_second_nav() == $link->active_url ? "active" : ""; ?>">
+                                        <li class="<?= active_nav() == "home" ? "active" : ""; ?>">
                                             <a href="<?= base_url($link->active_url) ?>"><?= $link->link_text; ?></a>
                                         </li>
                                     <?php } ?>
@@ -120,7 +120,7 @@
                                                     <ul class="d-flex flex-column row-gap-5">
                                                         <?php foreach ($this->config->item("webMobNavLinks")["student-bodies"] as $link) { ?>
                                                             <li
-                                                                class="<?= active_second_nav() == $link->active_url ? "active" : ""; ?>">
+                                                                class="<?= active_third_nav() == $link->active_url ? "active" : ""; ?>">
                                                                 <a href="<?= base_url($link->active_url) ?>"><?= $link->link_text; ?></a>
                                                             </li>
                                                         <?php } ?>
@@ -131,7 +131,7 @@
                                                     <ul class="d-flex flex-column row-gap-5">
                                                         <?php foreach ($this->config->item("webMobNavLinks")["events-gallery"] as $link) { ?>
                                                             <li
-                                                                class="<?= active_second_nav() == $link->active_url ? "active" : ""; ?>">
+                                                                class="<?= active_third_nav() == $link->active_url ? "active" : ""; ?>">
                                                                 <a href="<?= base_url($link->active_url) ?>"><?= $link->link_text; ?></a>
                                                             </li>
                                                         <?php } ?>
@@ -161,7 +161,7 @@
                                                         </li>
                                                         <?php foreach ($this->config->item("webMobNavLinks")["naac"] as $link) { ?>
                                                             <li
-                                                                class="<?= active_second_nav() == $link->active_url ? "active" : ""; ?>">
+                                                                class="<?= active_third_nav() == $link->active_url ? "active" : ""; ?>">
                                                                 <a href="<?= base_url($link->active_url) ?>"><?= $link->link_text; ?></a>
                                                             </li>
                                                         <?php } ?>
@@ -172,7 +172,7 @@
                                                     <ul class="d-flex flex-column row-gap-5">
                                                         <?php foreach ($this->config->item("webMobNavLinks")["nba"] as $link) { ?>
                                                             <li
-                                                                class="<?= active_second_nav() == $link->active_url ? "active" : ""; ?>">
+                                                                class="<?= active_third_nav() == $link->active_url ? "active" : ""; ?>">
                                                                 <a href="<?= base_url($link->active_url) ?>"><?= $link->link_text; ?></a>
                                                             </li>
                                                         <?php } ?>

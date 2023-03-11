@@ -5,10 +5,10 @@ class AcademicsController extends CI_Controller
 {
    public function programmes_offered()
    {
-      active_nav("academics", "programmes-offered");
+      active_nav("academics", "programmes-offered", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Programmes Offered",
          "breadcrumb" => ["academics", "Programmes Offered"]
       ];
@@ -21,10 +21,10 @@ class AcademicsController extends CI_Controller
 
    public function academic_planning()
    {
-      active_nav("academics", "academic-planning");
+      active_nav("academics", "academic-planning", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Academic Planning",
          "breadcrumb" => ["academics", "Academic Planning"]
       ];
@@ -39,10 +39,10 @@ class AcademicsController extends CI_Controller
 
    public function code_of_conduct()
    {
-      active_nav("academics", "code-of-conduct");
+      active_nav("academics", "code-of-conduct", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Code of Conduct",
          "breadcrumb" => ["academics", "Code of Conduct"]
       ];
@@ -57,10 +57,10 @@ class AcademicsController extends CI_Controller
 
    public function examination_evaluation()
    {
-      active_nav("academics", "examination-evaluation");
+      active_nav("academics", "examination-evaluation", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Examination Evaluation",
          "breadcrumb" => ["academics", "Examination Evaluation"]
       ];
@@ -73,10 +73,10 @@ class AcademicsController extends CI_Controller
 
    public function awards_scholarships()
    {
-      active_nav("academics", "awards-scholarships");
+      active_nav("academics", "awards-scholarships", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Awards & Scholarships",
          "breadcrumb" => ["academics", "Awards & Scholarships"]
       ];
@@ -89,10 +89,10 @@ class AcademicsController extends CI_Controller
 
    public function working_hours()
    {
-      active_nav("academics", "working-hours");
+      active_nav("academics", "working-hours", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Working Hours",
          "breadcrumb" => ["academics", "Working Hours"]
       ];
@@ -105,10 +105,10 @@ class AcademicsController extends CI_Controller
 
    public function capability_enhancement_development_schemes()
    {
-      active_nav("academics", "capability-enhancement-development-schemes");
+      active_nav("academics", "capability-enhancement-development-schemes", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Capability Enhancement Development Schemes",
          "breadcrumb" => ["academics", "Capability Enhancement Development Schemes"]
       ];

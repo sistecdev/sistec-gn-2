@@ -12,7 +12,7 @@ class Web extends CI_Controller
 		$data["placements"] = $this->mod->select("placements", "*", null, "id", "DESC", null, 3)->result();
 		$data["homeFacilities"] = @homeFacilities();
 
-		active_nav("home", "0");
+		active_nav("home", "home", "0");
 		$this->lib->header();
 		$this->load->view('web/pages/home', $data);
 		$this->load->view('web/pages-scripts/common-script');

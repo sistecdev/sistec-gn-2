@@ -5,10 +5,10 @@ class AboutController extends CI_Controller
 {
    public function sagar_institute_science_technology()
    {
-      active_nav("about", "sagar-institute-science-technology");
+      active_nav("about", "sagar-institute-science-technology", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "SIST<span class='text-lowercase'>ec</span>",
          "breadcrumb" => ["about", "SIST<span class='text-lowercase'>ec</span>"]
       ];
@@ -21,10 +21,10 @@ class AboutController extends CI_Controller
 
    public function sagar_group()
    {
-      active_nav("about", "sagar-group");
+      active_nav("about", "sagar-group", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Sagar Group",
          "breadcrumb" => ["about", "sagar group"]
       ];
@@ -38,10 +38,10 @@ class AboutController extends CI_Controller
 
    public function sagar_group_of_institutions()
    {
-      active_nav("about", "sagar-group-of-institutions");
+      active_nav("about", "sagar-group-of-institutions", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Sagar Group of Institutions",
          "breadcrumb" => ["about", "sagar group of institutions"]
       ];
@@ -54,10 +54,10 @@ class AboutController extends CI_Controller
 
    public function vision_mission()
    {
-      active_nav("about", "vision-mission");
+      active_nav("about", "vision-mission", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Vision & Mission",
          "breadcrumb" => ["about", "vision & mission"]
       ];
@@ -70,10 +70,10 @@ class AboutController extends CI_Controller
 
    public function management_team()
    {
-      active_nav("about", "management-team");
+      active_nav("about", "management-team", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Management Team",
          "breadcrumb" => ["about", "management team"]
       ];
@@ -86,10 +86,10 @@ class AboutController extends CI_Controller
 
    public function governing_bodies()
    {
-      active_nav("about", "governing-bodies");
+      active_nav("about", "governing-bodies", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Governing Bodies",
          "breadcrumb" => ["about", "governing bodies"]
       ];
@@ -102,10 +102,10 @@ class AboutController extends CI_Controller
 
    public function advisory_committee()
    {
-      active_nav("about", "advisory-committee");
+      active_nav("about", "advisory-committee", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Advisory Committee",
          "breadcrumb" => ["about", "advisory committee"]
       ];
@@ -118,10 +118,10 @@ class AboutController extends CI_Controller
 
    public function committees()
    {
-      active_nav("about", "committees");
+      active_nav("about", "committees", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Committees",
          "breadcrumb" => ["about", "committees"]
       ];
@@ -134,10 +134,10 @@ class AboutController extends CI_Controller
 
    public function financial_audited_statements()
    {
-      active_nav("about", "financial-audited-statements");
+      active_nav("about", "financial-audited-statements", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Financial Audited Statements",
          "breadcrumb" => ["about", "financial audited statements"]
       ];

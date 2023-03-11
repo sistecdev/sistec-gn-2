@@ -3,7 +3,7 @@ if (!defined('BASEPATH'))
    exit('No direct script access allowed');
 
 if (!function_exists('active_nav')) {
-   function active_nav($nav = "", $secondNav = "")
+   function active_nav($nav = "", $secondNav = "", $thirdNav = "")
    {
       $ci = &get_instance();
       $ci->load->library('session');
@@ -14,6 +14,11 @@ if (!function_exists('active_nav')) {
          active_second_nav($secondNav);
       } else if ($secondNav == "0") {
          $ci->session->unset_userdata("current_second_nav");
+      }
+      if ($thirdNav != "") {
+         active_third_nav($thirdNav);
+      } else if ($thirdNav == "0") {
+         $ci->session->unset_userdata("current_third_nav");
       }
       return $ci->session->userdata("current_nav");
    }
@@ -28,6 +33,18 @@ if (!function_exists('active_second_nav')) {
          $ci->session->set_userdata("current_second_nav", $nav);
       }
       return $ci->session->userdata("current_second_nav");
+   }
+}
+
+if (!function_exists('active_third_nav')) {
+   function active_third_nav($nav = "")
+   {
+      $ci = &get_instance();
+      $ci->load->library('session');
+      if ($nav != "") {
+         $ci->session->set_userdata("current_third_nav", $nav);
+      }
+      return $ci->session->userdata("current_third_nav");
    }
 }
 

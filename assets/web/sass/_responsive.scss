@@ -1,0 +1,40 @@
+@media (max-width: 767px) {
+
+    .split-slideshow,
+    .page__header__breadcrumb {
+        margin-top: $mob-page-content-top-spacing;
+
+    }
+
+    .page__header__breadcrumb {
+        .title {
+            font-size: 28px;
+        }
+    }
+
+    .page__content,
+    .common-no-bg-css {
+        padding: 35px 0;
+    }
+
+    .split-slideshow,
+    .slideshow-text {
+        height: calc(100vh - #{$mob-page-content-top-spacing});
+    }
+
+    .split-slideshow {
+        .slick-dots {
+            display: none !important;
+        }
+    }
+
+    .slideshow-text {
+        letter-spacing: 5px;
+        font-size: 40px;
+    }
+
+    #scroll-to-top-btn {
+        right: 15px;
+        bottom: 75px;
+    }
+}

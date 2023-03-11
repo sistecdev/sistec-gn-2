@@ -28,10 +28,10 @@ class DepartmentsController extends CI_Controller
 
 	public function electronics_communication_engineering()
 	{
-		active_nav("departments", "electronics-communication-engineering");
+		active_nav("departments", "electronics-communication-engineering", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Electronics & Communication Engineering",
 			"breadcrumb" => ["departments", "Electronics & Communication Engineering"]
 		];
@@ -53,10 +53,10 @@ class DepartmentsController extends CI_Controller
 
 	public function first_year_engineering()
 	{
-		active_nav("departments", "first-year-engineering");
+		active_nav("departments", "first-year-engineering", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "First Year Engineering",
 			"breadcrumb" => ["departments", "First Year Engineering"]
 		];
@@ -76,10 +76,10 @@ class DepartmentsController extends CI_Controller
 
 	public function master_business_administration()
 	{
-		active_nav("departments", "master-business-administration");
+		active_nav("departments", "master-business-administration", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Master of Business Administration",
 			"breadcrumb" => ["departments", "Master of Business Administration"]
 		];
@@ -99,10 +99,10 @@ class DepartmentsController extends CI_Controller
 
 	public function computer_science_engineering()
 	{
-		active_nav("departments", "computer-science-engineering");
+		active_nav("departments", "computer-science-engineering", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Computer Science Engineering",
 			"breadcrumb" => ["departments", "Computer Science Engineering"]
 		];
@@ -119,10 +119,10 @@ class DepartmentsController extends CI_Controller
 
 	public function civil_engineering()
 	{
-		active_nav("departments", "civil-engineering");
+		active_nav("departments", "civil-engineering", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Civil Engineering",
 			"breadcrumb" => ["departments", "Civil Engineering"]
 		];
@@ -139,10 +139,10 @@ class DepartmentsController extends CI_Controller
 
 	public function electrical_electronics_engineering()
 	{
-		active_nav("departments", "electrical-electronics-engineering");
+		active_nav("departments", "electrical-electronics-engineering", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Electrical Electronics Engineering",
 			"breadcrumb" => ["departments", "Electrical Electronics Engineering"]
 		];
@@ -159,10 +159,10 @@ class DepartmentsController extends CI_Controller
 
 	public function mechanical_engineering()
 	{
-		active_nav("departments", "mechanical-engineering");
+		active_nav("departments", "mechanical-engineering", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Mechanical Engineering",
 			"breadcrumb" => ["departments", "Mechanical Engineering"]
 		];
@@ -179,10 +179,10 @@ class DepartmentsController extends CI_Controller
 
 	public function artifical_intelligence_data_science()
 	{
-		active_nav("departments", "artifical-intelligence-data-science");
+		active_nav("departments", "artifical-intelligence-data-science", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Artifical Intelligence Data Science",
 			"breadcrumb" => ["departments", "Artifical Intelligence Data Science"]
 		];
@@ -199,10 +199,10 @@ class DepartmentsController extends CI_Controller
 
 	public function cyber_security()
 	{
-		active_nav("departments", "cyber-security");
+		active_nav("departments", "cyber-security", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Cyber Security",
 			"breadcrumb" => ["departments", "Cyber Security"]
 		];
@@ -219,10 +219,10 @@ class DepartmentsController extends CI_Controller
 
 	public function laboratory()
 	{
-		active_nav("departments", "mechanical-engineering");
+		active_nav("departments", "mechanical-engineering", "0");
 		$this->lib->header();
 
-		$pageData["pageHeader"] = (object)[
+		$pageData["pageHeader"] = (object) [
 			"title" => "Theory of Machines",
 			"breadcrumb" => ["departments", "mechanical engineering", "laboratories", "theory of machines"]
 		];

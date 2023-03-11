@@ -268,5 +268,11 @@ $config["webMobNavLinks"] = [
             "link_text" => "contact",
          ]
       ],
+      "facilities" => [
+         (object) [
+            "active_url" => "facilities",
+            "link_text" => "Facilities",
+         ]
+      ],
    ]
 ];

@@ -5,10 +5,10 @@ class CampusController extends CI_Controller
 {
    public function facilities()
    {
-      active_nav("campus-life", "facilities");
+      active_nav("campus-life", "facilities", "0");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "facilities",
          "breadcrumb" => ["campus life", "facilities"]
       ];
@@ -19,12 +19,28 @@ class CampusController extends CI_Controller
       $this->lib->footer();
    }
 
-   public function student_activity_council()
+   public function electro_pulse_club()
    {
-      active_nav("campus-life", "student-activity-council");
+      active_nav("campus-life", "student-bodies", "electro-pulse-club");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
+         "title" => "electro-pulse-club",
+         "breadcrumb" => ["campus life", "electro-pulse-club"]
+      ];
+
+      $this->load->view('web/common/breadcrumb', $pageData);
+      $this->load->view('web/pages/campus/electro-pulse-club');
+      $this->load->view('web/pages-scripts/common-script');
+      $this->lib->footer();
+   }
+
+   public function student_activity_council()
+   {
+      active_nav("campus-life", "student-bodies", "student-activity-council");
+      $this->lib->header();
+
+      $pageData["pageHeader"] = (object) [
          "title" => "Student Activity Council",
          "breadcrumb" => ["campus life", "Student Activity Council"]
       ];
@@ -37,9 +53,9 @@ class CampusController extends CI_Controller
 
    public function events()
    {
-      active_nav("campus-life", "events");
+      active_nav("campus-life", "events-gallery", "events");
       $this->lib->header();
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Events",
          "breadcrumb" => ["campus life", "Events"]
       ];
@@ -52,25 +68,25 @@ class CampusController extends CI_Controller
 
    /*public function inner_event()
    {
-      active_nav("campus-life", "events");
-      $this->lib->header();
-      $pageData["pageHeader"] = (object)[
-         "title" => "Inner Event",
-         "breadcrumb" => ["campus life", "Inner Event"]
-      ];
-      $this->load->view('web/common/breadcrumb', $pageData);
-      $this->load->view('web/pages/campus/inner-event');
-      $this->load->view('web/pages-scripts/common-script');
-      $this->load->view('web/pages-scripts/fancybox');
-      $this->lib->footer();
+   active_nav("campus-life", "events");
+   $this->lib->header();
+   $pageData["pageHeader"] = (object)[
+   "title" => "Inner Event",
+   "breadcrumb" => ["campus life", "Inner Event"]
+   ];
+   $this->load->view('web/common/breadcrumb', $pageData);
+   $this->load->view('web/pages/campus/inner-event');
+   $this->load->view('web/pages-scripts/common-script');
+   $this->load->view('web/pages-scripts/fancybox');
+   $this->lib->footer();
    }*/
 
    public function photo_gallery()
    {
-      active_nav("campus-life", "photo-gallery");
+      active_nav("campus-life", "events-gallery", "photo-gallery");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Photo Gallery",
          "breadcrumb" => ["campus life", "Photo Gallery"]
       ];
@@ -83,10 +99,10 @@ class CampusController extends CI_Controller
 
    public function video_gallery()
    {
-      active_nav("campus-life", "video-gallery");
+      active_nav("campus-life", "events-gallery", "video-gallery");
       $this->lib->header();
 
-      $pageData["pageHeader"] = (object)[
+      $pageData["pageHeader"] = (object) [
          "title" => "Video Gallery",
          "breadcrumb" => ["campus life", "Video Gallery"]
       ];
@@ -96,22 +112,6 @@ class CampusController extends CI_Controller
       $this->load->view('web/pages/campus/video-gallery', $data);
       $this->load->view('web/pages-scripts/common-script');
       $this->load->view('web/pages-scripts/fancybox');
-      $this->lib->footer();
-   }
-
-   public function electro_pulse_club()
-   {
-      active_nav("campus-life", "electro-pulse-club");
-      $this->lib->header();
-
-      $pageData["pageHeader"] = (object)[
-         "title" => "electro-pulse-club",
-         "breadcrumb" => ["campus life", "electro-pulse-club"]
-      ];
-
-      $this->load->view('web/common/breadcrumb', $pageData);
-      $this->load->view('web/pages/campus/electro-pulse-club');
-      $this->load->view('web/pages-scripts/common-script');
       $this->lib->footer();
    }
 }

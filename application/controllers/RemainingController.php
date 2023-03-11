@@ -5,12 +5,12 @@ class RemainingController extends CI_Controller
 {
    public function research_development()
    {
-      active_nav("research-development", "research-development");
+      active_nav("research-development", "research-development", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
          "title" => "Research & Development",
-         "breadcrumb" => ["campus life", "Research & Development"]
+         "breadcrumb" => ["Research & Development"]
       ];
 
       $this->load->view('web/common/breadcrumb', $pageData);
@@ -21,12 +21,12 @@ class RemainingController extends CI_Controller
 
    public function naac_mandatory_disclosure()
    {
-      active_nav("accreditations", "naac-mandatory-disclosure");
+      active_nav("accreditations", "naac", "naac-mandatory-disclosure");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
          "title" => "Naac Mandatory Disclosure",
-         "breadcrumb" => ["campus life", "Naac Mandatory Disclosure"]
+         "breadcrumb" => ["accreditations", "NAAC", "Naac Mandatory Disclosure"]
       ];
 
       $this->load->view('web/common/breadcrumb', $pageData);
@@ -37,12 +37,12 @@ class RemainingController extends CI_Controller
 
    public function nba_program_applied()
    {
-      active_nav("accreditations", "nba-program-applied");
+      active_nav("accreditations", "nba", "nba-program-applied");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
          "title" => "NBA Program Applied",
-         "breadcrumb" => ["campus life", "NBA Program Applied"]
+         "breadcrumb" => ["accreditations", "NBA", "NBA Program Applied"]
       ];
 
       $this->load->view('web/common/breadcrumb', $pageData);
@@ -53,12 +53,12 @@ class RemainingController extends CI_Controller
 
    public function placements()
    {
-      active_nav("placements", "placements");
+      active_nav("placements", "placements", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
          "title" => "placements",
-         "breadcrumb" => ["campus life", "placements"]
+         "breadcrumb" => ["placements"]
       ];
 
       $pageData["industryLinkages"] = @industryLinkages();
@@ -70,12 +70,12 @@ class RemainingController extends CI_Controller
 
    public function admission_enquiry()
    {
-      active_nav("admissions", "admission-enquiry");
+      active_nav("admissions", "admissions", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
          "title" => "admission enquiry",
-         "breadcrumb" => ["campus life", "admission enquiry"]
+         "breadcrumb" => ["admissions", "admission enquiry"]
       ];
 
       $data["courses"] = $this->mod->select("courses", "*", ["active" => 1, "status" => 1], "course_id", "ASC")->result();
@@ -89,12 +89,12 @@ class RemainingController extends CI_Controller
 
    public function admission_procedure()
    {
-      active_nav("admissions", "admission-procedure");
+      active_nav("admissions", "admission-procedure", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
          "title" => "admission procedure",
-         "breadcrumb" => ["campus life", "admission procedure"]
+         "breadcrumb" => ["admissions", "admission procedure"]
       ];
 
       $this->load->view('web/common/breadcrumb', $pageData);
@@ -105,12 +105,12 @@ class RemainingController extends CI_Controller
 
    public function contact()
    {
-      active_nav("contact", "contact");
+      active_nav("contact", "contact", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
          "title" => "contact",
-         "breadcrumb" => ["campus life", "contact"]
+         "breadcrumb" => ["contact"]
       ];
 
       $this->load->view('web/common/breadcrumb', $pageData);
@@ -121,7 +121,7 @@ class RemainingController extends CI_Controller
 
    public function newsletters_bulletins()
    {
-      active_nav("strip-upper", "newsletters-bulletins");
+      active_nav("strip-upper", "newsletters-bulletins", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
@@ -138,7 +138,7 @@ class RemainingController extends CI_Controller
 
    public function approvals()
    {
-      active_nav("strip-upper", "approvals");
+      active_nav("strip-upper", "approvals", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
@@ -157,7 +157,7 @@ class RemainingController extends CI_Controller
 
    public function careers()
    {
-      active_nav("strip-upper", "careers");
+      active_nav("strip-upper", "careers", "0");
       $this->lib->header();
 
       $pageData["pageHeader"] = (object) [
